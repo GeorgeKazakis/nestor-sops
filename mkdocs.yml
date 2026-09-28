@@ -4,6 +4,7 @@ site_description: Open-access guidelines, protocols and SOPs for validating and 
 
 theme:
   name: material
+  logo: assets/nestor-logo.png
   font: false
   palette:
     - scheme: default
