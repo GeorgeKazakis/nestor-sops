@@ -1,0 +1,41 @@
+site_name: NESTOR Clinical Validation Guidelines
+site_url: https://georgekazakis.github.io/nestor-sops/
+site_description: Open-access guidelines, protocols and SOPs for validating and translating data-driven innovations into clinical practice within NESTOR.
+
+theme:
+  name: material
+  font: false
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+
+# Earlier detailed drafts remain in source, outside the site and search index.
+exclude_docs: |
+  /introduction.md
+  /validation-framework/
+  /protocols/
+  /templates/
+  /references.md
+
+nav:
+  - About the guidelines: index.md
+  - Practical workflow: practical-workflow.md
+  - Embryo image-analysis example: embryo-image-analysis.md
+
+copyright: Documentation licensed under CC BY 4.0.
