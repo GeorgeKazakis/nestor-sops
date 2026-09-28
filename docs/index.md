@@ -1,8 +1,5 @@
 # NESTOR Clinical Validation Guidelines
 
-!!! warning "Draft — under development"
-    This report covers embryo image analysis. It does not establish clinical readiness or benefit.
-
 | Document detail | Information |
 | --- | --- |
 | Deliverable | D3.3 (originally D3.4 in the proposal) |

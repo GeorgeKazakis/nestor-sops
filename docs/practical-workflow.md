@@ -1,8 +1,5 @@
 # Practical workflow
 
-!!! warning "Working protocol outline"
-    These are proposed documentation steps for the embryo image-analysis example. Detailed procedures and study-specific criteria still require review.
-
 The purpose is to make clear what was evaluated, how it was evaluated and what the evidence supports.
 
 For the current example, the research objective is to study changes in ZP, ICM and TE during embryo development and hatching. Segmentation supports visual assessment and analysis of metrics over time.
