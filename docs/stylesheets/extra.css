@@ -93,6 +93,32 @@
   font-size: 0.8rem;
 }
 
+.md-typeset .checklist-item {
+  display: block;
+  margin-bottom: 0.7em;
+  cursor: pointer;
+}
+
+.checklist-blank {
+  display: inline-block;
+  width: 12rem;
+  max-width: 100%;
+  min-height: 1.2em;
+  border-bottom: 1px solid currentColor;
+}
+
+.md-typeset .checklist-item input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #752582;
+  cursor: pointer;
+}
+
+.md-typeset .checklist-item input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--md-typeset-a-color);
+  outline-offset: 3px;
+}
+
 .nestor-footer {
   background: var(--nestor-light);
   color: var(--nestor-dark);
@@ -145,6 +171,54 @@
   margin: 0;
   font-size: 0.75rem;
   line-height: 1.6;
+}
+
+@media print {
+  .md-typeset {
+    color: #000;
+    font-size: 10pt;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    color: #000;
+    break-after: avoid;
+  }
+
+  .md-typeset .md-typeset__scrollwrap,
+  .md-typeset .md-typeset__table {
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 8pt;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    min-width: 0;
+    padding: 0.4em;
+    overflow-wrap: anywhere;
+    color: #000;
+  }
+
+  .md-typeset tr,
+  .md-typeset .checklist-item {
+    break-inside: avoid;
+  }
+
+  .md-typeset .checklist-item input[type="checkbox"] {
+    appearance: auto;
+    print-color-adjust: exact;
+  }
 }
 
 @media screen and (max-width: 44.984375em) {

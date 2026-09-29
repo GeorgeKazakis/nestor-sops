@@ -2,7 +2,7 @@
 
 Open-access guidelines, protocols and standard operating procedures for the validation and translation of data-driven innovative methods into clinical practice within the NESTOR research domains.
 
-**Status: Draft — pending review.** D3.3 is scheduled for submission on **30 September 2026**, with **UM** as lead beneficiary. Authors and reviewers remain pending. This version covers embryo analysis and does not establish clinical readiness.
+Based on the supplied D3.3 report, with **UM** as lead beneficiary. The public site covers the general validation workflow, legal and ethical guidance, multi-site harmonisation and an embryo image-analysis example. It presents practical guidance without website version labels or drafting history.
 
 ## Project context
 
@@ -10,7 +10,7 @@ This repository develops NESTOR **D3.3** in the revised deliverable list, origin
 
 The scope covers personalised reproductive medicine, assisted reproductive technologies, non-invasive prenatal testing, uterine health, and AI/data-driven solutions for ART.
 
-The separate `embryo-vision` repository contains the research implementation. This site documents a short practical workflow and a draft worked example, distinguishing verified local records from missing original training/evaluation evidence. Private data and model weights are not copied here.
+The separate `embryo-vision` repository contains the research implementation. This site presents the practical guidance from D3.3 v3, with explicit evidence limits and next steps for the exploratory embryo study. Private data and model weights are not copied here.
 
 ## Local development
 
@@ -52,13 +52,22 @@ Generated output is written to `site/` and ignored by Git, as is `.venv/`. MkDoc
 
 ## Content organisation
 
-- [About the guidelines](docs/index.md): purpose, proposal references and current scope.
-- [Practical workflow](docs/practical-workflow.md): concise steps and a draft transferred-model checking procedure.
-- [Embryo image-analysis example](docs/embryo-image-analysis.md): documented work and missing evidence.
+- [About the guidelines](docs/index.md): purpose, audience, scope and starting points.
+- [From research to clinical use](docs/clinical-translation.md): Chapter 2, including the evidence stages in Table 2.
+- [Practical workflow](docs/practical-workflow.md): Chapter 5 and Table 6, linked to checklist items and the worked example.
+- [Legal, regulatory and ethical guidance](docs/regulatory-guidance.md): Chapter 3, Tables 3–4 and dated official implementation sources.
+- [Harmonisation across sites](docs/harmonisation.md): Chapter 4 and the minimum practices in Table 5.
+- [Validation checklist](docs/validation-checklist.md): all 30 Annex A items, with accessible checkboxes and print support. Selections are not stored; download the editable Word copy to maintain a study record.
+- [Embryo image-analysis example](docs/embryo-image-analysis.md): Chapter 6, including current evidence and further validation needs in Table 7.
+- [Limitations and next steps](docs/limitations.md): Chapters 8–9 and Table 8.
+- [References and downloads](docs/references.md): source-numbered bibliography, original v3 report and an editable Annex A checklist.
+- [Abbreviations](docs/abbreviations.md): the report's glossary.
 
-Earlier [introduction](docs/introduction.md), [framework](docs/validation-framework/index.md), [protocol catalogue](docs/protocols/index.md), [templates](docs/templates/index.md) and [references](docs/references.md) are retained as inactive drafts. They are excluded from the built website and search index through `exclude_docs`; their content may be outdated and is not the current site structure. References for active content appear on its own pages.
+Earlier [introduction](docs/introduction.md), [framework](docs/validation-framework/index.md), [protocol catalogue](docs/protocols/index.md) and [templates](docs/templates/index.md) are retained as inactive drafts. They are excluded from the built website and search index through `exclude_docs`; their content may be outdated and is not the current site structure. The references page is now active and follows the v3 report.
 
-Edit Markdown in `docs/`; maintain navigation in [mkdocs.yml](mkdocs.yml). Keep unknown scientific content as explicit TODOs until sourced and reviewed. Split overview pages only when sufficient content exists to justify separate pages.
+Edit Markdown in `docs/`; maintain navigation in [mkdocs.yml](mkdocs.yml). The report section and table anchors are stable cross-references and should be retained when editing headings. Record substantive differences from the source report in the repository history. Do not invent missing measurements, approvals, numerical cutoffs or governance assignments.
+
+Refresh the source report download only when a new source version is supplied. Keep all checklist items and the `(M)` / `(C)` scope labels aligned between the source annex, web page and editable download. The downloadable v3 report is an unchanged copy of the supplied public deliverable.
 
 ## Publication and releases
 

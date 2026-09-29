@@ -167,6 +167,12 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Public deliverable attachments are website source assets.
+!/docs/downloads/
+/docs/downloads/*
+!/docs/downloads/NESTOR_D3.3_Clinical_Validation_Guidelines_v3.docx
+!/docs/downloads/NESTOR_D3.3_Validation_Checklist_v3.docx
+
 # mypy
 .mypy_cache/
 .dmypy.json

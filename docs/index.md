@@ -1,25 +1,42 @@
 # NESTOR Clinical Validation Guidelines
 
-## Summary
+These guidelines provide a practical approach to validating data-driven methods for translation towards clinical practice. They connect the research question, dataset, model version, evaluation and review decisions to the evidence behind a finding.
 
-Deliverable D3.3 provides protocols, standard operating procedures and practical recommendations for validating data-driven innovative methods for use in clinical practice.
+They implement **NESTOR deliverable D3.3**, “Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice”, under WP3 and Task T3.1, with **Maastricht University (UM)** as lead beneficiary.
 
-To this end, a practical workflow was established within NESTOR to study changes in the zona pellucida (ZP), inner cell mass (ICM) and trophectoderm (TE) during embryo development and hatching. This standard operating procedure combines automated segmentation, visual review guidelines and quantitative assessment of time-lapse images. It also includes filtering out frames with incomplete or incorrect segmentation and excluding embryos where segmentation quality is insufficient for analysis.
+## Start here
 
-## Purpose
+1. Identify the [stage of evidence](clinical-translation.md#table-2) and define what the method is intended to do.
+2. Follow the [five-stage practical workflow](practical-workflow.md), including its legal and cross-site checkpoints.
+3. Agree on the [harmonised minimum practices](harmonisation.md#table-5) when working across institutions.
+4. Use the [validation checklist](validation-checklist.md) to record what has been addressed and what remains open.
+5. Consult the [embryo image-analysis example](embryo-image-analysis.md) and its [next steps towards clinical validation](embryo-image-analysis.md#table-7).
 
-These guidelines draw on NESTOR research experience to support the evaluation of data-driven methods and their translation into clinical practice. They describe how to organise an analysis, review its outputs and document the evidence needed to assess its intended use.
+## Scope and audience
 
-**Deliverable D3.3** forms part of WP3 and T3.1 of the [NESTOR project](https://nestorhorizoneu.com/), with **UM** as the lead beneficiary. Its title is “Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice”.
+The workflow, legal framework and harmonisation principles cover data-driven methods across NESTOR’s research areas: personalised reproductive medicine, assisted reproductive technologies (ART), non-invasive prenatal testing, uterine health and AI-based solutions for ART. They can also support related feto-maternal and multimodal research. The worked example concerns embryo image analysis; further examples are planned.
 
-## Scope
+The guidelines are intended for clinical embryologists, laboratory directors, researchers, data scientists, software developers, quality and regulatory staff, and data protection and ethics officers, within the consortium and beyond.
 
-NESTOR brings together researchers in personalised reproductive medicine, assisted reproductive technologies (ART), non-invasive prenatal testing, uterine health and AI-based solutions for ART.
+The embryo example documents **exploratory research (Stage A)**. It shows how automated segmentation, visual quality review and quantitative measurements were combined to study the zona pellucida (ZP), inner cell mass (ICM) and trophectoderm (TE) during development and hatching. This work does not establish suitability for embryo selection or treatment decisions. Its evidence gaps and follow-up needs are set out explicitly in [Table 7](embryo-image-analysis.md#table-7).
 
-The guidelines presented here focus on embryo image analysis within the ART and AI research area. The [practical workflow](practical-workflow.md) sets out the analysis and quality-review steps, while the [embryo image-analysis example](embryo-image-analysis.md) shows how these steps were applied to study embryo development and hatching.
+## What the guidelines contain
+
+| Resource | How to use it |
+| --- | --- |
+| [From research to clinical use](clinical-translation.md) | Locate a study on the translation pathway and understand the roles of different sites and sectors. |
+| [Practical workflow](practical-workflow.md) | Organise the evaluation into task definition, data description, model identification, evaluation and visual review, and documentation and interpretation. |
+| [Legal, regulatory and ethical guidance](regulatory-guidance.md) | Identify the questions to resolve at each stage with the responsible institutional experts. |
+| [Harmonisation across sites](harmonisation.md) | Agree common metadata, annotation, model records, review criteria, performance measures and reporting. |
+| [Validation checklist](validation-checklist.md) | Work through Annex A online or download an editable copy for the study record. |
+| [Embryo image-analysis example](embryo-image-analysis.md) | Follow the five stages in a NESTOR application and examine its current evidence. |
+| [Limitations and next steps](limitations.md) | Anticipate methodological, data, legal and organisational constraints and their proposed solutions. |
+| [References and downloads](references.md) | Find the supporting bibliography, full deliverable and editable checklist. |
 
 ## Project context
 
-These guidelines contribute to NESTOR T3.1, which addresses the translation of research experience into open-access protocols and standard operating procedures.
+[NESTOR](https://nestorhorizoneu.com/) connects academic, clinical and industry partners in the Netherlands, Estonia and Greece. Task T3.1 translates experience gained through secondments into open-access protocols and SOPs for validation. The embryo-analysis work was carried out by members of **Infersence (INFS)** and **UM** within the hospital’s approved computing environment in Maastricht.
 
-The embryo-analysis work presented in these guidelines was carried out through a collaboration between members of INF and UM at the hospital in Maastricht.
+The guidelines build on the metadata, consent and interoperability work of T3.4 and the harmonised time-lapse data collection developed within the project. They complement the project’s ethics, data and intellectual property management plans and its regulatory training. The detailed task and work-package mapping is available in Chapter 1 of the [full deliverable](references.md#downloads).
+
+The report’s contributors are Kristel Rose, George Kazakis, Masoud Zamani-Esteki and Aspasia Destouni.

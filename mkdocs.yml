@@ -39,9 +39,16 @@ exclude_docs: |
   /validation-framework/
   /protocols/
   /templates/
-  /references.md
 
 nav:
   - About the guidelines: index.md
+  - From research to clinical use: clinical-translation.md
   - Practical workflow: practical-workflow.md
+  - Legal, regulatory and ethical guidance: regulatory-guidance.md
+  - Harmonisation across sites: harmonisation.md
+  - Validation checklist: validation-checklist.md
   - Embryo image-analysis example: embryo-image-analysis.md
+  - Limitations and next steps: limitations.md
+  - Resources:
+      - References and downloads: references.md
+      - Abbreviations: abbreviations.md
