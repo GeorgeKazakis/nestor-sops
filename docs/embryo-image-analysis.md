@@ -1,45 +1,47 @@
 # Embryo image-analysis example
 
-## Research objective
+This example presents the NESTOR study of embryo development and hatching through the five stages of the [practical workflow](practical-workflow.md). It brings together the research objective, the image-analysis approach and the visual review procedure used to select segmentation outputs for measurement.
 
-The objective is to study changes in the zona pellucida (ZP), inner cell mass (ICM) and trophectoderm (TE) during embryo development and hatching using time-lapse images.
+The embryo-analysis work was carried out through a collaboration between members of INF and UM at the hospital in Maastricht.
 
-Segmentation identifies these structures in individual frames, supporting the assessment of changes in size, shape, ZP thickness and image intensity over time.
+## 1. Task definition
 
-## How changes were assessed
+The research objective was to study changes in the zona pellucida (ZP), inner cell mass (ICM) and trophectoderm (TE) during embryo development and hatching. Automated segmentation identified these structures in time-lapse images, supporting the assessment of size, shape, ZP thickness and image intensity over time.
 
-The team used a segmentation model trained on a separate computing workstation. Changes were assessed through visual inspection of images, overlays and videos, together with quantitative metrics saved in CSV files. Each CSV represents one embryo, with one row per time-lapse frame.
+Visual observations and quantitative measurements were used together to examine developmental changes. Hatching was identified visually, providing an observation separate from the measurements extracted by the analysis pipeline.
 
-Hatching was established visually and was not recorded in the measurement CSVs.
+## 2. Data description
 
-This report summarises the research approach and available implementation. It does not present quantitative findings from the CSVs.
+The analysis used time-lapse image sequences of embryo development and hatching. Each sequence contained successive frames associated with an embryo, allowing changes in the identified structures to be followed over time.
 
-## Relationship to the practical workflow
- 
-### Quality review used in this work
+Images, segmentation overlays and videos provided the material for visual assessment. Review determined which frames, and in some cases which entire embryo sequences, were retained for analysis and metric extraction.
 
-The team visually reviewed segmentation results for each run. Frames that appeared incorrectly segmented were excluded from analysis. If too many frames within an embryo appeared incorrect, the whole embryo was excluded from analysis and metric extraction.
+The measurements were organised by embryo and frame. This preserved the relationship between each quantitative record and its position within the corresponding image sequence.
 
-This was a qualitative review decision; no numerical exclusion cutoff has been specified here. The resulting analysis describes the retained frames and embryos.
+## 3. Model identification
 
-### Applying the workflow
+The analysis pipeline used a segmentation model to identify ZP, ICM and TE in individual time-lapse frames. Its outputs represented the three anatomical structures and supported visualisation of their boundaries and extraction of quantitative measurements.
 
-The example illustrates the sequence described in the [practical workflow](practical-workflow.md): define the research question, prepare the images, apply the model, inspect the outputs and document observations and limitations.
+Segmentation overlays and videos allowed the predicted structures to be inspected in relation to the source images. The outputs also supported the assessment of image intensity and structural changes during development.
 
-The research implementation remains in the separate `embryo-vision` repository. This guidelines site explains the approach without reproducing the software, private images or detailed measurement records.
+The model's role in this application was to identify the structures used for analysis. Visual review determined whether the resulting segmentation was suitable for measurement.
 
-## Current scope
+## 4. Evaluation and visual review
 
-This is an example of research into changes during embryo development and hatching. It does not establish suitability for embryo selection or treatment decisions. Model performance and any proposed clinical application require their own supporting evaluation.
+The quality-review procedure used in this application was based on visual inspection of the segmentation results for each run. It was comprised of three stages:
 
-## Evidence and project connection
- 
-### Conclusions
+1. Visual inspection of the predicted ZP, ICM and TE structures.
+2. Exclusion of frames with incomplete or incorrect segmentation from analysis.
+3. Exclusion of an embryo from analysis and metric extraction when too many of its frames were incorrectly segmented.
 
-The activity combined segmentation, visual assessment and frame-level quantitative records to investigate embryo development and hatching. Visual quality review determined which frames and embryos were retained for analysis. The practical contribution of this report is the description of that workflow and its exclusion procedure, providing a basis for further documentation and evaluation rather than a claim of clinical validation.
+The embryo-level decision relied on qualitative visual judgement, without a fixed numerical cutoff. The resulting measurements therefore describe the frames and embryos retained after this review.
 
-### Sources
+Images, overlays and videos were examined alongside quantitative measurements to assess changes over time. This describes the visual quality review applied in the study; numerical segmentation-performance results are not presented in this example.
 
-This overview draws on the project contributor's description and inspection of the `embryo-vision` documentation and analysis tools. A permanent implementation reference can be added for a reviewed release.
+## 5. Documentation and interpretation
 
-The NESTOR proposal connects time-lapse image-recognition development to ST2.2.3 (printed page 22, PDF page 93), and validation guidance to T3.1 (printed page 24, PDF page 95). This example documents a contribution to that work, not completion of every planned outcome.
+Quantitative measurements were stored in one CSV file per embryo, with one row per time-lapse frame. This organisation supported assessment of changes in size, shape, ZP thickness and image intensity across each sequence.
+
+Hatching was assessed visually and was not recorded in the measurement CSV files. The visual observations and the quantities extracted by the pipeline therefore provide distinct sources of information about development and hatching.
+
+Interpretation concerns the retained frames and embryos because incomplete or incorrect segmentation led to exclusions. The procedure illustrates how automated segmentation, visual review and quantitative assessment were combined in a research application. Its suitability for embryo selection or treatment decisions has not been established by this workflow alone.

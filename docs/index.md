@@ -1,51 +1,25 @@
 # NESTOR Clinical Validation Guidelines
 
-| Document detail | Information |
-| --- | --- |
-| Deliverable | D3.3 (originally D3.4 in the proposal) |
-| Lead beneficiary | UM |
-| Submission date | 30 September 2026 |
-| Work package and task | WP3 / T3.1 |
-| Authors | Pending |
-| Reviewers | Pending |
-| Status | Draft — pending review |
-
 ## Summary
 
-Deliverable D3.3 describes a practical workflow for studying changes in the zona pellucida, inner cell mass and trophectoderm during embryo development and hatching. The workflow combines automated segmentation, visual review and quantitative assessment of time-lapse images. It includes the exclusion of incorrectly segmented frames and, where segmentation errors are judged excessive, entire embryos from subsequent analysis.
+Deliverable D3.3 provides protocols, standard operating procedures and practical recommendations for validating data-driven innovative methods for use in clinical practice.
 
-The report documents the approach used in this research activity and provides a basis for practical guidance within NESTOR. It focuses on the workflow and quality-review process, without presenting detailed metric definitions or quantitative results. Further evaluation would be required to support a proposed clinical application.
+To this end, a practical workflow was established within NESTOR to study changes in the zona pellucida (ZP), inner cell mass (ICM) and trophectoderm (TE) during embryo development and hatching. This standard operating procedure combines automated segmentation, visual review guidelines and quantitative assessment of time-lapse images. It also includes filtering out frames with incomplete or incorrect segmentation and excluding embryos where segmentation quality is insufficient for analysis.
 
 ## Purpose
 
-The aim is to turn NESTOR research experience into practical guidance for evaluating innovative methods and identifying what is needed before their proposed use in clinical practice.
+These guidelines draw on NESTOR research experience to support the evaluation of data-driven methods and their translation into clinical practice. They describe how to organise an analysis, review its outputs and document the evidence needed to assess its intended use.
 
-This is **Deliverable D3.3** in the revised deliverable list, originally **D3.4** in the proposal, under WP3 and T3.1. The lead beneficiary is **UM**. Its title is “Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice”. T3.1 calls for open-access web-based guidelines in the form of protocols and SOPs.
-
-This deliverable is separate from D3.2 on interoperability, originally identified as D3.3 in the proposal.
-
-Part of the [NESTOR project](https://nestorhorizoneu.com/).
+**Deliverable D3.3** forms part of WP3 and T3.1 of the [NESTOR project](https://nestorhorizoneu.com/), with **UM** as the lead beneficiary. Its title is “Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice”.
 
 ## Scope
 
-This version contains a short [practical workflow](practical-workflow.md) and an [embryo image-analysis example](embryo-image-analysis.md), drawing on work in the separate `embryo-vision` research repository. Code, model weights and private images remain there; this site explains the process, evidence and limitations.
+NESTOR brings together researchers in personalised reproductive medicine, assisted reproductive technologies (ART), non-invasive prenatal testing, uterine health and AI-based solutions for ART.
 
-The wider project covers:
+The guidelines presented here focus on embryo image analysis within the ART and AI research area. The [practical workflow](practical-workflow.md) sets out the analysis and quality-review steps, while the [embryo image-analysis example](embryo-image-analysis.md) shows how these steps were applied to study embryo development and hatching.
 
-- Personalised reproductive medicine
-- Assisted reproductive technologies (ART)
-- Non-invasive prenatal testing
-- Uterine health
-- AI and data-driven solutions for ART
+## Project context
 
-The scope of this report is the embryo-analysis work within the ART/AI area. The other research domains provide the wider project context and are not covered as case studies in this version.
+These guidelines contribute to NESTOR T3.1, which addresses the translation of research experience into open-access protocols and standard operating procedures.
 
-## Project source
-
-NESTOR proposal SEP-210906745, dated 15 November 2022: T3.1 on printed page 24 (PDF page 95); deliverable table on printed page 28 (PDF page 99). The proposal describes multiple case studies across the research domains; this site does not claim that one example fulfils the whole task. The supplied proposal is not redistributed here.
-
-## Living guidelines and deliverable snapshots
-
-This site is intended to become the living open-access version of the NESTOR guidelines. Reviewed releases may later be archived as fixed snapshots, including a PDF corresponding to the official deliverable version. The current version remains a draft pending review.
-
-Documentation is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The embryo-analysis work presented in these guidelines was carried out through a collaboration between members of INF and UM at the hospital in Maastricht.

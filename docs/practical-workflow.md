@@ -1,38 +1,69 @@
 # Practical workflow
 
-The purpose is to make clear what was evaluated, how it was evaluated and what the evidence supports.
+Evaluation of a data-driven method involves a defined research question, a documented dataset and an identifiable model. The workflow below organises these elements into five stages, from the definition of the task to the interpretation of findings. Each stage describes its purpose, the information involved and its contribution to the overall analysis.
 
-For the current example, the research objective is to study changes in ZP, ICM and TE during embryo development and hatching. Segmentation supports visual assessment and analysis of metrics over time.
+The workflow provides a general framework for organising method evaluation. The data, performance measures and criteria for an acceptable result depend on the task being studied. A worked application is presented in the [embryo image-analysis example](embryo-image-analysis.md), using the same five stages.
 
-| Step | Action | Record to keep |
+## Organising the evaluation
+
+| Step | Description | Documentation |
 | --- | --- | --- |
-| 1. Define the task | State which structures the method identifies, who will inspect its outputs and what use is being investigated. | A short scope statement, including excluded uses. |
-| 2. Describe the data | Identify image sources, annotations and their review status. Explain how training and evaluation sets were separated, including whether related images share an embryo or patient. | Dataset description and saved split records. |
-| 3. Identify the model | Record the actual checkpoint, training configuration, preprocessing and output-class order. | Model/version record linked to its original training run. |
-| 4. Evaluate and inspect | Compare predictions with appropriate reference annotations and inspect errors. Explain how reported measures were calculated. | Evaluation results and a reviewed error summary. |
-| 5. Report limits and next steps | Distinguish measured performance from exploratory visualisations and proposed future clinical use. | Findings, missing evidence and follow-up work. |
+| [1. Task definition](#1-task-definition) | Definition of the research question, intended use and expected outputs. | Scope of the analysis and responsibilities for review. |
+| [2. Data description](#2-data-description) | Description of data sources, reference information and the separation of training and evaluation data. | Dataset description, preparation methods and selection records. |
+| [3. Model identification](#3-model-identification) | Identification of the model version, configuration and meaning of its outputs. | Model record and analysis settings. |
+| [4. Evaluation and visual review](#4-evaluation-and-visual-review) | Assessment of performance and review of outputs before further analysis. | Evaluation results, review decisions and exclusion records. |
+| [5. Documentation and interpretation](#5-documentation-and-interpretation) | Presentation of findings in relation to the research question and the limits of the analysis. | Results, supporting observations and further evaluation needs. |
 
-## Visual review and exclusion
+## 1. Task definition
 
-The team describes the following quality-review procedure used in the embryo image-analysis work:
+The research question establishes what the method is intended to identify, measure or predict. Its intended use provides the context for interpreting the outputs: the same measurement may have different requirements when used for exploratory research or to support a particular decision.
 
-1. Visually inspect the segmentation results for each run.
-2. Exclude frames judged to be incorrectly segmented from the analysis.
-3. Where too many frames within an embryo are judged incorrect, exclude that embryo entirely from analysis and metric extraction.
+The scope describes the population or material being studied, the features of interest and the expected outputs. It also identifies responsibilities for reviewing those outputs and the role of human assessment within the analysis. This makes the relationship between automated processing and expert judgement clear from the outset.
 
-The embryo-level decision was based on visual judgement; no numerical cutoff has been supplied for this description. This records the team's practice, rather than establishing a universal exclusion threshold. Interpretation of the resulting analysis should make clear that it concerns the retained frames and embryos.
+Criteria for an acceptable result follow from this scope. They describe the level of accuracy, completeness or consistency needed for the task and the types of error that would make an output unsuitable. A documented scope gives data selection, model evaluation and interpretation a common basis.
 
-## Short procedure: checking a transferred model
+## 2. Data description
 
-This draft procedure is based on the local implementation and the need to trace a model trained on another machine.
+The dataset description covers the source of the data, how they were collected, the material included and any preparation applied before analysis. Relevant preparation may include image resizing, intensity normalisation or the handling of missing observations. These details help explain the conditions under which the method is evaluated.
 
-1. Match the checkpoint to its original training record; mark missing provenance as pending.
-2. Check output labels against the saved class order. In the current example, TE and ICM occupy different channel positions from the local baseline models.
-3. Confirm that input preprocessing matches the training setup. Record differences for investigation.
-4. Review sample outputs and retain the evaluation report belonging to this checkpoint. Do not substitute another model's results.
+When an analysis involves patient data, restrictions on data transfer may require the work to be performed within the hospital's approved computing environment. The arrangements for data access and processing therefore form part of the analysis setup.
 
-The expected output is a traceable model record with discrepancies listed for review. This procedure does not itself demonstrate clinical validity.
+Where evaluation involves comparison with reference information, its origin and review process form part of the description. For image analysis, this may include annotations identifying the structures of interest. Uncertainty or inconsistency in the reference information affects the interpretation of differences between the model and the reference.
 
-## Basis and limits
+The separation of training and evaluation data accounts for related observations from the same source, such as repeated measurements from one participant or images from one sequence. Their allocation to each set affects how independently the method is being evaluated.
 
-These steps are a working synthesis of the NESTOR T3.1 activities (proposal, printed page 24) and the repository inspection summarised in the [worked example](embryo-image-analysis.md). They are not a validated cross-domain SOP or a regulatory checklist. Data permissions, scientific acceptance criteria and clinical implementation decisions remain subject to the relevant project and institutional review.
+Dataset documentation also describes the criteria for inclusion and exclusion. Links between the original observations, processed inputs and retained results make it possible to understand how the analysed dataset was formed. This is particularly relevant when quality review removes part of the original data.
+
+## 3. Model identification
+
+Model identification covers the version used for analysis, its associated configuration and the preparation of its inputs. The model and its settings together define the method being evaluated; a change in either may alter the resulting outputs.
+
+The description of the outputs explains what each label, value or region represents. In an image-segmentation method, for example, the association between output labels and anatomical structures determines how overlays and subsequent measurements are interpreted. Units and any processing applied after prediction are also relevant to understanding the results.
+
+A model record connects the input preparation, model version and analysis settings with the resulting evaluation. This supports reproducibility and allows comparisons between analyses to account for changes in the method, rather than attributing every difference to the data.
+
+## 4. Evaluation and visual review
+
+Evaluation examines how well the outputs address the task defined in step 1. Where suitable reference information is available, comparison with that reference provides a basis for calculating performance measures. The calculation and level of analysis are part of the evaluation description, since a result calculated per image may answer a different question from one calculated per sequence or participant.
+
+Visual review complements quantitative measures in image-based applications. It reveals the nature and distribution of errors, including incomplete outputs or incorrect identification of structures that may be obscured by an overall performance value. Review of individual results also helps determine whether they can support subsequent measurements.
+
+Quality review addresses three related aspects:
+
+1. The characteristics that distinguish usable outputs from incomplete or incorrect results.
+2. The level at which a decision applies, such as an individual observation or a complete sequence.
+3. The basis for retaining, reprocessing or excluding the affected data.
+
+The review criteria and reasons for exclusion explain how the final analysis set differs from the original dataset. Numerical thresholds and qualitative judgements represent different bases for these decisions and are described accordingly. Evaluation of the original outputs and analysis of the retained data answer different questions; the latter describes the subset that passed review.
+
+Performance measures describe the quality of the method's outputs. Measurements subsequently derived from those outputs address the research question. Keeping these two types of result distinct clarifies what the evaluation establishes and how output quality affects the findings.
+
+## 5. Documentation and interpretation
+
+Documentation brings together the research question, dataset, model configuration, evaluation results and review decisions. Their connection allows a finding to be traced to the data and processing steps from which it was derived.
+
+Quantitative results and qualitative observations provide different forms of evidence. Their presentation identifies how each was obtained, the observations to which it applies and any exclusions affecting its interpretation. This makes the basis of each finding clear without treating a visual judgement as an automatically calculated measurement.
+
+Interpretation relates the findings to the task defined in step 1. It considers the coverage of the dataset, the quality of the reference information, the errors observed and the effect of data selection. These factors explain the conditions under which the findings are supported and the questions that remain open.
+
+The resulting account describes both the contribution of the method and any further evaluation needed for its intended use. The [embryo image-analysis example](embryo-image-analysis.md) shows how the five stages relate to a specific NESTOR research application.

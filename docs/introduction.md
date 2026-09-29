@@ -4,13 +4,13 @@
 
 ## Deliverable identity
 
-The intended deliverable is the original **NESTOR D3.4**:
+The deliverable is **NESTOR D3.3**:
 
 > Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice
 
-Possible subsequent renumbering to D3.3 is **unconfirmed**. The scope remains clinical validation and translation. This is distinct from the original D3.3, “Report on interoperability of the interconnected data infrastructures, standards for data management”.
+The scope is clinical validation and translation. This is distinct from D3.2 on interoperability.
 
-TODO: Confirm the final identifier, authoritative title, responsible partners, authors, reviewers and approval details against the current project documentation.
+TODO: Confirm the authoritative title, responsible partners, authors, reviewers and approval details against the current project documentation.
 
 ## Project context
 

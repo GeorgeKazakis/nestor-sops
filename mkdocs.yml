@@ -4,6 +4,7 @@ site_description: Open-access guidelines, protocols and SOPs for validating and 
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/nestor-logo.png
   font: false
   palette:
@@ -23,6 +24,12 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  generator: false
+  deliverable:
+    number: D3.3
+    title: Protocols and standard operating procedures on practical recommendations covering the data driven innovative method validation into the clinical practice
+
 markdown_extensions:
   - admonition
 
@@ -38,5 +45,3 @@ nav:
   - About the guidelines: index.md
   - Practical workflow: practical-workflow.md
   - Embryo image-analysis example: embryo-image-analysis.md
-
-copyright: Documentation licensed under CC BY 4.0.

@@ -92,3 +92,67 @@
 .md-typeset .admonition {
   font-size: 0.8rem;
 }
+
+.nestor-footer {
+  background: var(--nestor-light);
+  color: var(--nestor-dark);
+  border-top: 3px solid #752582;
+}
+
+[data-md-color-scheme="slate"] .nestor-footer {
+  background: var(--nestor-dark);
+  color: var(--nestor-light);
+}
+
+.nestor-footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0.8rem;
+}
+
+.nestor-footer__logo {
+  flex-shrink: 0;
+  padding: 0.35rem 0.5rem;
+  background: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.nestor-footer__logo img {
+  display: block;
+  width: 8rem;
+  height: auto;
+}
+
+.nestor-footer__logo:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.nestor-footer__description {
+  flex: 1;
+  min-width: 0;
+  max-width: 42rem;
+}
+
+.nestor-footer__number {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nestor-footer__title {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .nestor-footer__inner {
+    gap: 1rem;
+  }
+
+  .nestor-footer__logo img {
+    width: 4.5rem;
+  }
+}

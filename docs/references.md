@@ -7,7 +7,7 @@
 The initial scope and project identifiers were supplied in the repository setup brief. They have not yet been checked against an authoritative project document in this repository.
 
 - TODO: Record the NESTOR proposal/grant-agreement version and relevant WP3/T3.1 sections and page references.
-- TODO: Verify the original D3.4 title and any approved renumbering using the current deliverable register.
+- TODO: Verify the D3.3 title using the current deliverable register.
 - TODO: Confirm project acknowledgement, authorship and release approval information.
 
 Link public project sources where available; do not upload restricted project documents solely to complete this register.
