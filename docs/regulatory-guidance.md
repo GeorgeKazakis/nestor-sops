@@ -35,7 +35,7 @@ Start with the [workflow checkpoints](#table-4), then consult the supporting fra
 
 **Data protection impact assessment.** Screen the planned processing under Article 35 and the competent authority’s requirements. A DPIA is required where processing is likely to create a high risk to individuals, including large-scale processing of special-category data; the use of new technology is relevant to that assessment. Record the screening outcome and update any DPIA when the processing changes. See [GDPR Article 35](references.md#ref-7).
 
-**Keeping data in place.** The embryo-analysis work in this deliverable was carried out within the hospital’s approved computing environment, because restrictions on data transfer applied. This “model-to-data” approach, in which the analysis is brought to the data rather than the other way round, reduces transfer risk and simplifies cross-border compliance. It is recommended as the default for NESTOR multi-site validation ([Section 4.4](harmonisation.md#section-4-4)).
+**Keeping data in place.** The embryo-analysis work in this deliverable was carried out within the approved computing environment at MUMC+, because restrictions on data transfer applied. This “model-to-data” approach, in which the analysis is brought to the data rather than the other way round, reduces transfer risk and simplifies cross-border compliance. It is recommended as the default for NESTOR multi-site validation ([Section 4.4](harmonisation.md#section-4-4)).
 
 <span id="section-3-2"></span>
 

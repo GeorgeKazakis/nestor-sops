@@ -60,14 +60,14 @@ Generated output is written to `site/` and ignored by Git, as is `.venv/`. MkDoc
 - [Validation checklist](docs/validation-checklist.md): all 30 Annex A items, with accessible checkboxes and print support. Selections are not stored; download the editable Word copy to maintain a study record.
 - [Embryo image-analysis example](docs/embryo-image-analysis.md): Chapter 6, including current evidence and further validation needs in Table 7.
 - [Limitations and next steps](docs/limitations.md): Chapters 8–9 and Table 8.
-- [References and downloads](docs/references.md): source-numbered bibliography, original v3 report and an editable Annex A checklist.
+- [References and downloads](docs/references.md): source-numbered bibliography, v3 report and an editable Annex A checklist.
 - [Abbreviations](docs/abbreviations.md): the report's glossary.
 
 Earlier [introduction](docs/introduction.md), [framework](docs/validation-framework/index.md), [protocol catalogue](docs/protocols/index.md) and [templates](docs/templates/index.md) are retained as inactive drafts. They are excluded from the built website and search index through `exclude_docs`; their content may be outdated and is not the current site structure. The references page is now active and follows the v3 report.
 
 Edit Markdown in `docs/`; maintain navigation in [mkdocs.yml](mkdocs.yml). The report section and table anchors are stable cross-references and should be retained when editing headings. Record substantive differences from the source report in the repository history. Do not invent missing measurements, approvals, numerical cutoffs or governance assignments.
 
-Refresh the source report download only when a new source version is supplied. Keep all checklist items and the `(M)` / `(C)` scope labels aligned between the source annex, web page and editable download. The downloadable v3 report is an unchanged copy of the supplied public deliverable.
+Refresh the source report download only when a new source version is supplied. Keep all checklist items and the `(M)` / `(C)` scope labels aligned between the source annex, web page and editable download. The downloadable v3 report matches the [report maintained in this repository](reports/NESTOR_D3.3_Clinical_Validation_Guidelines_v3.docx), including agreed terminology corrections.
 
 ## Publication and releases
 

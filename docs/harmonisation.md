@@ -53,7 +53,7 @@ Three models can be used to evaluate a method across sites:
 
 - Centralised pooling. Data from all sites are transferred to one location. This is the simplest model analytically, but it requires legal agreements in every jurisdiction and exposes the most data to transfer risk.
 
-- Federated, model-to-data evaluation. The model and analysis scripts travel to each site. Evaluation runs within each institution’s approved environment, and only aggregate results, such as performance measures and exclusion counts, leave the site. The Maastricht example illustrates the local model-to-data principle: analysis took place inside the hospital. It does not demonstrate a completed multi-site federated evaluation.
+- Federated, model-to-data evaluation. The model and analysis scripts travel to each site. Evaluation runs within each institution’s approved environment, and only aggregate results, such as performance measures and exclusion counts, leave the site. The MUMC+ example illustrates the local model-to-data principle: analysis took place within its approved computing environment. It does not demonstrate a completed multi-site federated evaluation.
 
 - Hybrid. Core evaluation is federated, and a limited, anonymised or strictly pseudonymised subset is shared centrally for tasks such as joint annotation review.
 

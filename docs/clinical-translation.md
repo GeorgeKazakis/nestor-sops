@@ -12,7 +12,7 @@ Rigorous validation is how the field avoids both errors: adopting methods that d
 
 ## Why validation must work across borders
 
-The NESTOR consortium spans three health systems. A method developed and evaluated in Maastricht will only be useful to a clinic in Thessaloniki or Tartu if there is evidence that it performs acceptably there. Differences between sites can affect performance in ways that are not visible in a single-site study:
+The NESTOR consortium spans three health systems. A method developed and evaluated at MUMC+ will only be useful to a clinic in Thessaloniki or Tartu if there is evidence that it performs acceptably there. Differences between sites can affect performance in ways that are not visible in a single-site study:
 
 - Technical differences: time-lapse platforms, imaging intervals, focal planes, optics and image formats.
 
@@ -38,9 +38,9 @@ Translating a data-driven method into care requires contributions that no single
 
 | Partner type | Contribution to validation | Examples in NESTOR |
 | --- | --- | --- |
-| Universities (UT, AUT, UM, NTUA) | Study design, statistics and computational methods; research ethics expertise; access to academic clinical research environments. | UM hosting the embryo-analysis work in Maastricht; training of seconded researchers under T3.1. |
-| IVF clinics (AN, the clinical setting in Maastricht) | Patient data and images; clinical annotation and judgement; knowledge of the clinical workflow; end users of validated methods. | AN implementing harmonised data collection, including TLM images, under T3.4. |
-| Technology SMEs (INFS, CELVIA) | Software engineering and AI development; quality management systems; experience of CE marking and accredited laboratory services. | INFS carrying out the embryo image analysis; CELVIA’s ISO 15189-accredited laboratory and CE-marked IVD tests. |
+| Universities (UT, AUT, UM, NTUA) | Study design, statistics and computational methods; research ethics expertise; access to academic clinical research environments. | UM hosting the embryo-analysis work at MUMC+; training of seconded researchers under T3.1. |
+| IVF clinics (AN, MUMC+) | Patient data and images; clinical annotation and judgement; knowledge of the clinical workflow; end users of validated methods. | AN implementing harmonised data collection, including TLM images, under T3.4. |
+| Technology SMEs (INFS, Celvia) | Software engineering and AI development; quality management systems; experience of CE marking and accredited laboratory services. | INFS carrying out the embryo image analysis; Celvia’s ISO 15189-accredited laboratory and CE-marked IVD tests. |
 | Innovation campus (BMHC) | Valorisation, intellectual property and regulatory training. | Training on IP protection and IVDR applications in WP4. |
 | Advisory Board | Independent expertise in privacy law, biomedical ethics, health economics and patient perspectives. | Guidance on data protection, ethics and patient engagement. |
 

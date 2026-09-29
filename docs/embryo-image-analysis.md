@@ -2,7 +2,7 @@
 
 This example presents the NESTOR study of embryo development and hatching through the five stages of the [practical workflow](practical-workflow.md). It brings together the research objective, the image-analysis approach and the visual review procedure used to select segmentation outputs for measurement. [Section 6.6](embryo-image-analysis.md#section-6-6) then relates the study to the stages of clinical translation described in [Chapter 2](clinical-translation.md).
 
-The embryo-analysis work was carried out through a collaboration between members of INFS and UM at the hospital in Maastricht.
+The embryo-analysis work was carried out through a collaboration between members of INFS and UM at MUMC+.
 
 <span id="section-6-1"></span>
 
@@ -24,7 +24,7 @@ Images, segmentation overlays and videos provided the material for visual assess
 
 The measurements were organised by embryo and frame. This preserved the relationship between each quantitative record and its position within the corresponding image sequence.
 
-Because the images were linked to patient treatment, the analysis was carried out within the hospital’s approved computing environment in Maastricht, and the data were not transferred to the seconded researcher’s home institution.
+Because the images were linked to patient treatment, the analysis was carried out within the approved computing environment at MUMC+, and the data were not transferred to the seconded researcher’s home institution.
 
 <span id="section-6-3"></span>
 
@@ -81,6 +81,6 @@ Interpretation concerns the retained frames and embryos because incomplete or in
 | Generalisability | Data from a single clinical setting. | Multi-site data from different time-lapse systems and populations, with site-held-out validation. |
 | Clinical relevance | Measurements examined alongside visually identified hatching. | Association with clinical outcomes (e.g. implantation, live birth) and added value over standard morphological assessment. |
 | Regulatory status | Exploratory research; outputs did not inform embryo selection or transfer. Regulatory scope requires an activity-specific assessment. | Qualification and classification; quality management system; clinical investigation; AI Act high-risk requirements where applicable. |
-| Data governance | Analysis within the hospital’s approved environment. | Multi-site agreements, DPIAs and a federated evaluation infrastructure. |
+| Data governance | Analysis within the approved environment at MUMC+. | Multi-site agreements, DPIAs and a federated evaluation infrastructure. |
 
 *Source: D3.3, Chapter 6. See the [full deliverable](references.md#downloads).*

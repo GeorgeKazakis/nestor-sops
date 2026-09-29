@@ -35,7 +35,7 @@ The embryo example documents **exploratory research (Stage A)**. It shows how au
 
 ## Project context
 
-[NESTOR](https://nestorhorizoneu.com/) connects academic, clinical and industry partners in the Netherlands, Estonia and Greece. Task T3.1 translates experience gained through secondments into open-access protocols and SOPs for validation. The embryo-analysis work was carried out by members of **Infersence (INFS)** and **UM** within the hospital’s approved computing environment in Maastricht.
+[NESTOR](https://nestorhorizoneu.com/) connects academic, clinical and industry partners in the Netherlands, Estonia and Greece. Task T3.1 translates experience gained through secondments into open-access protocols and SOPs for validation. The embryo-analysis work was carried out by members of **Infersence (INFS)** and **UM** within the approved computing environment at MUMC+.
 
 The guidelines build on the metadata, consent and interoperability work of T3.4 and the harmonised time-lapse data collection developed within the project. They complement the project’s ethics, data and intellectual property management plans and its regulatory training. The detailed task and work-package mapping is available in Chapter 1 of the [full deliverable](references.md#downloads).
 

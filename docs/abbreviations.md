@@ -8,9 +8,8 @@
 | ART | Assisted reproductive technology |
 | AUT | Aristotle University of Thessaloniki |
 | BMHC | Brightlands Maastricht Health Campus |
-| CCHT | Competence Centre on Health Technologies (now CELVIA) |
 | CE | Conformité Européenne (marking) |
-| CELVIA | Celvia (formerly CCHT) |
+| Celvia | Technology SME partner in NESTOR |
 | DoA | Description of Action |
 | DPIA | Data protection impact assessment |
 | EHDS | European Health Data Space |
@@ -23,6 +22,7 @@
 | IVF | In vitro fertilisation |
 | MAR | Medically assisted reproduction |
 | MDR | Medical Devices Regulation (EU) 2017/745 |
+| MUMC+ | Clinical setting for the embryo-analysis study |
 | NIPT | Non-invasive prenatal testing |
 | NTUA | National Technical University of Athens |
 | PGT | Preimplantation genetic testing |
